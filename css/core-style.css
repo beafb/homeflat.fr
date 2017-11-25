@@ -756,6 +756,7 @@ img {
     overflow: hidden;
     background: url(../img/bench-accounting-49909.jpg) no-repeat;
     background-size: cover;
+    background-color: #f6f6f6;
     background-position-y: -214px;
 }
 
