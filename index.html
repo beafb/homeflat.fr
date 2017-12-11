@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="img/core-img/favicon.ico">
 
     <!-- >>>>>>>>>>>>>>>> All CSS Files <<<<<<<<<<<<<<<< -->
-    <meta name="google-site-verification" content="ZISZCUc6WPx0HA0g6TVswCsuzsDnjPV3RQL6QXgpTTc" />
+    <meta name="google-site-verification" content="ZISZCUc6WPx0HA0g6TVswCsuzsDnjPV3RQL6QXgpTTc"/>
     <!-- Slidea Slider CSS -->
     <link href="assets/css/slidea/slidea.css" rel="stylesheet">
     <link href="assets/css/slidea/themes/default.css" rel="stylesheet">
@@ -664,6 +664,20 @@
 
 <!-- Slider Active JS  -->
 <script src="assets/js/templates/default-slider-active.js" type="text/javascript"></script>
+<script>
+    IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+    IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+    if (IS_IPAD()) {
+        $(".hover_overlay").each(function () {
+            $(this).css("opacity", "1");
+        });
+    }
+</script>
+<script>
+    if (isMobile()){
+        $('.hover_overlay').css('opacity', '1');
+    }
+</script>
 <script>
     (function ($) {
         $.xpath = function (exp, ctxt) {
